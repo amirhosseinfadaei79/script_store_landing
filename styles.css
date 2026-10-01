@@ -876,12 +876,15 @@ h2 {
 
 .admin {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 36px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 88px 28px;
+}
+
+.admin > div:first-child {
+  max-width: 640px;
 }
 
 .note {
@@ -1211,23 +1214,33 @@ button:hover {
 }
 
 
+
+
+
 /* =========================
-   CREDENTIALS BOX
+   CREDS WRAPPER (Admin + Swagger)
 ========================= */
+
+.creds-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
 
 .creds-box {
   background: var(--bg);
   border: 1.5px solid var(--border);
   border-radius: 14px;
-  padding: 32px 28px;
+  padding: 28px 24px;
 }
 
 .creds-box .formtitle {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 24px;
-  font-size: 24px;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--text);
 }
@@ -1238,28 +1251,33 @@ button:hover {
 }
 
 .creds-box .formtitle b {
-  font-size: 16.5px;
+  font-size: 15.5px;
   font-weight: 600;
 }
 
 .creds-box .formtitle small {
-  font-size: 12.5px;
+  font-size: 12px;
   color: var(--text-soft);
   font-weight: 400;
+  direction: ltr;
 }
 
 .cred-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-bottom: 22px;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cred-cards.single {
+  grid-template-columns: 1fr;
 }
 
 .cred-card {
   background: var(--bg-soft);
   border: 1.5px solid var(--border);
   border-radius: 10px;
-  padding: 16px 18px;
+  padding: 14px 16px;
 }
 
 .cred-badge {
@@ -1268,7 +1286,7 @@ button:hover {
   font-weight: 600;
   padding: 3px 10px;
   border-radius: 5px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .admin-badge {
@@ -1283,12 +1301,18 @@ button:hover {
   border: 1px solid #f5e6b8;
 }
 
+.swagger-badge {
+  background: #eef2ff;
+  color: #4338ca;
+  border: 1px solid #c7d2fe;
+}
+
 .cred-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
-  font-size: 13.5px;
+  font-size: 13px;
 }
 
 .cred-row:last-child {
@@ -1302,8 +1326,26 @@ button:hover {
 .cred-row b {
   color: var(--text);
   font-weight: 600;
-  font-size: 13.5px;
+  font-size: 13px;
   direction: ltr;
+}
+
+.outline-btn {
+  background: transparent !important;
+  color: var(--text) !important;
+  border: 1.5px solid var(--border) !important;
+}
+
+.outline-btn:hover {
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+  background: #f0fdfa !important;
+}
+
+@media (max-width: 900px) {
+  .creds-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {

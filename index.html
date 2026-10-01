@@ -18,7 +18,7 @@
       <a href="#architecture">معماری</a>
       <a href="#tech">تکنولوژی</a>
       <a href="#customer-app">اپلیکیشن مشتری</a>
-      <a href="#admin">پنل مدیریت</a>
+      <a href="#admin">پنل مدیریت و مستندات API</a>
       <a href="#faq">سوالات متداول</a>
     </nav>
     <a class="outline" href="https://script.shop.savisapp.ir" target="_blank" rel="noopener">مشاهده</a>
@@ -32,8 +32,8 @@
         <p>یک راهکار کامل و یکپارچه برای فروشگاه‌های پوشاک: پنل مدیریت حرفه‌ای، اپلیکیشن مشتری (وب و موبایل) و بک‌اند
           مستقل — هر سه با معماری مدرن، مولتی‌شعبه‌ای واقعی، سفارش و اعلان Live و سیستم پرداخت آماده.</p>
         <div class="buttons">
-          <a class="primary"  href="#admin">ورود به پنل مدیریت
-           </a>
+          <a class="primary" href="#admin">پنل مدیریت و مستندات API
+          </a>
           <a class="outline" href="#architecture">مشاهده معماری سیستم</a>
         </div>
         <div class="stats">
@@ -50,8 +50,7 @@
               title="پیش‌نمایش فروشگاه پوشا" loading="lazy" allowfullscreen></iframe>
           </div>
         </div>
-        <a class="preview-btn" href="https://script.shop.savisapp.ir"
-          target="_blank" rel="noopener">
+        <a class="preview-btn" href="https://script.shop.savisapp.ir" target="_blank" rel="noopener">
           مشاهده نسخه کامل
         </a>
       </div>
@@ -228,45 +227,72 @@
 
     <section id="admin" class="admin">
       <div>
-        <label>پنل مدیریت</label>
-        <h2>پنل مدیریت را قبل از خرید ببین.</h2>
-        <p>دو سطح دسترسی برای تست در اختیارتان قرار دارد. اطلاعات ورود نمونه است و بعداً قابل تغییر است.</p>
-        <div class="note">ⓘ <span><b>Demo Access</b><small>پس از ورود می‌توانید محیط واقعی پنل را بررسی کنید.</small></span>
+        <label>دسترسی دمو</label>
+        <h2>پنل مدیریت و مستندات API را ببین.</h2>
+        <p>اطلاعات ورود نمونه برای تست پنل مدیریت و Swagger در اختیارتان قرار دارد.</p>
+        <div class="note">ⓘ <span><b>Demo Access</b><small>پس از ورود می‌توانید محیط واقعی را بررسی کنید.</small></span>
         </div>
       </div>
 
-      <div class="creds-box">
-        <div class="formtitle">
-          P <span><b>ورود به پنل مدیریت</b><small>adminscript.savisapp.ir</small></span>
-        </div>
+      <div class="creds-wrapper">
+        <!-- Admin Panel -->
+        <div class="creds-box">
+          <div class="formtitle">
+            P <span><b>پنل مدیریت</b><small>adminscript.savisapp.ir</small></span>
+          </div>
 
-        <div class="cred-cards">
-          <div class="cred-card">
-            <div class="cred-badge admin-badge">ادمین</div>
-            <div class="cred-row">
-              <span>نام کاربری</span>
-              <b>admin</b>
+          <div class="cred-cards">
+            <div class="cred-card">
+              <div class="cred-badge branch-badge">شعبه</div>
+              <div class="cred-row">
+                <span>نام کاربری</span>
+                <b>dress</b>
+              </div>
+              <div class="cred-row">
+                <span>رمز عبور</span>
+                <b>dress@123</b>
+              </div>
             </div>
-            <div class="cred-row">
-              <span>رمز عبور</span>
-              <b>admin@123</b>
+            <div class="cred-card">
+              <div class="cred-badge admin-badge">ادمین</div>
+              <div class="cred-row">
+                <span>نام کاربری</span>
+                <b>admin</b>
+              </div>
+              <div class="cred-row">
+                <span>رمز عبور</span>
+                <b>admin@123</b>
+              </div>
             </div>
           </div>
 
-          <div class="cred-card">
-            <div class="cred-badge branch-badge">شعبه</div>
-            <div class="cred-row">
-              <span>نام کاربری</span>
-              <b>dress</b>
-            </div>
-            <div class="cred-row">
-              <span>رمز عبور</span>
-              <b>dress@123</b>
-            </div>
-          </div>
+          <a class="primary form-btn" href="https://adminscript.savisapp.ir" target="_blank" rel="noopener">ورود به پنل
+            ←</a>
         </div>
 
-        <a class="primary form-btn" href="https://adminscript.savisapp.ir" target="_blank" rel="noopener">ورود به پنل ←</a>
+        <!-- Swagger -->
+        <div class="creds-box">
+          <div class="formtitle">
+            S <span><b>مستندات API (Swagger)</b><small>api.script.shop.savisapp.ir</small></span>
+          </div>
+
+          <div class="cred-cards single">
+            <div class="cred-card">
+              <div class="cred-badge swagger-badge">Swagger</div>
+              <div class="cred-row">
+                <span>نام کاربری</span>
+                <b>shop</b>
+              </div>
+              <div class="cred-row">
+                <span>رمز عبور</span>
+                <b>shop@123</b>
+              </div>
+            </div>
+          </div>
+
+          <a class="primary form-btn outline-btn" href="https://api.script.shop.savisapp.ir/api-docs/login"
+            target="_blank" rel="noopener">ورود به Swagger ←</a>
+        </div>
       </div>
     </section>
 
@@ -348,7 +374,7 @@
       <b>محصول</b>
       <a href="#features">ویژگی‌ها</a>
       <a href="#architecture">معماری</a>
-      <a  href="#admin">پنل مدیریت</a>
+      <a href="#admin">پنل مدیریت و مستندات API</a>
     </div>
     <div class="fcol">
       <b>فنی</b>
