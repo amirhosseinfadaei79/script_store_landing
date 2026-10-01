@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>پوشا | اسکریپت فروشگاهی مولتی‌شعبه‌ای</title>
+  <meta name="description"
+    content="پوشا یک اسکریپت کامل فروشگاه پوشاک با پنل مدیریت React، اپلیکیشن مشتری Next.js و بک‌اند Node.js است؛ مولتی‌شعبه‌ای واقعی، سفارش و اعلان لحظه‌ای، پرداخت آنلاین و اپ موبایل در یک پکیج.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="#">P<span>پوشا</span><small>POOSHA</small></a>
+    <nav>
+      <a href="#features">ویژگی‌ها</a>
+      <a href="#architecture">معماری</a>
+      <a href="#tech">تکنولوژی</a>
+      <a href="#customer-app">اپلیکیشن مشتری</a>
+      <a href="#admin">پنل مدیریت</a>
+      <a href="#faq">سوالات متداول</a>
+    </nav>
+    <a class="outline" href="https://script.shop.savisapp.ir" target="_blank" rel="noopener">مشاهده</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="copy">
+        <label>اسکریپت فروشگاهی مولتی‌شعبه‌ای</label>
+        <h1>فروشگاه اینترنتی خودت را با <b>پوشا</b> بساز.</h1>
+        <p>یک راهکار کامل و یکپارچه برای فروشگاه‌های پوشاک: پنل مدیریت حرفه‌ای، اپلیکیشن مشتری (وب و موبایل) و بک‌اند
+          مستقل — هر سه با معماری مدرن، مولتی‌شعبه‌ای واقعی، سفارش و اعلان Live و سیستم پرداخت آماده.</p>
+        <div class="buttons">
+          <a class="primary"  href="#admin">ورود به پنل مدیریت
+           </a>
+          <a class="outline" href="#architecture">مشاهده معماری سیستم</a>
+        </div>
+        <div class="stats">
+          <span><b>مولتی‌شعبه‌ای</b>واقعی و کامل</span>
+          <span><b>Next.js ۱۶</b>App Router</span>
+          <span><b>۱۰۰٪</b>تایپ‌اسکریپت</span>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="browser">
+          <div class="bar">● ● ● <span>script.shop.savisapp.ir</span></div>
+          <div class="iframe-wrap">
+            <iframe src="https://script.shop.savisapp.ir?branchCode=6a44de4dcba32c96569b8f60"
+              title="پیش‌نمایش فروشگاه پوشا" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+        <a class="preview-btn" href="https://script.shop.savisapp.ir"
+          target="_blank" rel="noopener">
+          مشاهده نسخه کامل
+        </a>
+      </div>
+    </section>
+
+    <section class="tech" id="tech">
+      <span>ساخته‌شده با تکنولوژی‌های مدرن</span>
+      <div>
+        <b>Next.js 16 (App Router)</b>
+        <b>React 19</b>
+        <b>Node.js / Express 4</b>
+        <b>TypeScript 5</b>
+        <b>MongoDB 8.6 (Mongoose)</b>
+        <b>Socket.IO 4.8</b>
+        <b>TanStack React Query 5</b>
+        <b>Zustand 5</b>
+        <b>Tailwind CSS v4</b>
+        <b>Vite 7</b>
+        <b>Capacitor 7</b>
+        <b>JWT Auth</b>
+      </div>
+    </section>
+
+    <section id="architecture" class="arch">
+      <label>معماری سیستم</label>
+      <h2>سه بخش مستقل، <b>یک سیستم یکپارچه.</b></h2>
+      <p class="sub">پنل مدیریت و اپلیکیشن مشتری هر دو مستقیماً با یک بک‌اند و یک پایگاه‌داده مشترک کار می‌کنند؛ هر
+        تغییری در یکی، بدون هیچ sync دستی در دیگری دیده می‌شود.</p>
+      <div class="arch-row">
+        <div class="arch-card">
+          <em>01</em>
+          <h3>پنل مدیریت</h3>
+          <small>React 19 + Vite + TypeScript</small>
+          <ul>
+            <li>مدیریت محصول، سفارش، شعبه</li>
+            <li>جدول‌های پیشرفته با فیلتر و جستجو</li>
+            <li>سفارش زنده با Socket.io</li>
+          </ul>
+        </div>
+        <div class="arch-connector"><span>REST API<br>JWT (نقش Admin/Branch)</span></div>
+        <div class="arch-card core">
+          <em>02</em>
+          <h3>بک‌اند API</h3>
+          <small>Node.js + Express + MongoDB</small>
+          <ul>
+            <li>معماری لایه‌ای Controller → Service → Repository</li>
+            <li>پاسخ یکدست IResponse در هر دو کلاینت</li>
+            <li>اتصال به زرین‌پال و نقشهٔ نشان</li>
+          </ul>
+        </div>
+        <div class="arch-connector"><span>REST API<br>JWT (ورود OTP) + branchCode</span></div>
+        <div class="arch-card">
+          <em>03</em>
+          <h3>اپلیکیشن مشتری</h3>
+          <small>Next.js 16 (App Router) + Capacitor</small>
+          <ul>
+            <li>رندر ترکیبی سرور/کلاینت (SSR)</li>
+            <li>سبد خرید کوکی‌محور</li>
+            <li>همان سورس، هم وب هم موبایل</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <label>چرا پوشا؟</label>
+      <h2>فقط یک فروشگاه نیست؛ یک سیستم کامل فروش است.</h2>
+      <p class="sub">تمام بخش‌های ضروری یک فروشگاه پوشاک مدرن، در یک پنل یکپارچه.</p>
+      <div class="grid">
+        <article>
+          <i>01</i>
+          <strong>مولتی‌شعبه‌ای واقعی</strong>
+          <p>موجودی، قیمت، ظاهر و مدیر مستقل برای هر شعبه؛ انتخاب شعبه مستقیماً توسط مشتری در اپلیکیشن انجام می‌شود.</p>
+        </article>
+        <article>
+          <i>02</i>
+          <strong>محصولات پیشرفته</strong>
+          <p>رنگ و سایز با موجودی، قیمت و گالری تصاویر مستقل برای هر ترکیب.</p>
+        </article>
+        <article>
+          <i>03</i>
+          <strong>سفارش و اعلان Live</strong>
+          <p>سفارش جدید با Socket.io در لحظه در پنل مدیریت ظاهر می‌شود، بدون رفرش صفحه.</p>
+        </article>
+        <article>
+          <i>04</i>
+          <strong>ارسال هوشمند</strong>
+          <p>محاسبه هزینهٔ ارسال بر اساس فاصلهٔ واقعی آدرس مشتری (نقشهٔ نشان) و تعرفهٔ هر شعبه.</p>
+        </article>
+        <article>
+          <i>05</i>
+          <strong>ورود امن با OTP</strong>
+          <p>ورود مشتری با شماره موبایل و کد پیامکی؛ بدون نیاز به ثبت رمز عبور.</p>
+        </article>
+        <article>
+          <i>06</i>
+          <strong>پرداخت آنلاین</strong>
+          <p>اتصال کامل به درگاه زرین‌پال با تأیید دوطرفه و امکان پرداخت مجدد سفارش ناموفق.</p>
+        </article>
+        <article>
+          <i>07</i>
+          <strong>وبلاگ و سئو</strong>
+          <p>دسته‌بندی بلاگ، نظرات، استوری محصول و ساختار آماده برای سئو.</p>
+        </article>
+        <article>
+          <i>08</i>
+          <strong>باشگاه مشتریان</strong>
+          <p>مناسبت‌های ویژه و کدهای تخفیف اختصاصی برای افزایش بازگشت مشتری.</p>
+        </article>
+        <article>
+          <i>09</i>
+          <strong>یک سورس، دو پلتفرم</strong>
+          <p>اپلیکیشن مشتری هم به‌صورت PWA نصب می‌شود، هم با Capacitor به اپ اندروید/iOS تبدیل می‌شود.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="branch">
+      <div>
+        <label>سیستم چندشعبه‌ای</label>
+        <h2>یک سیستم، چند شعبه، <b>استقلال کامل.</b></h2>
+        <p>هر شعبه می‌تواند فروشگاه، موجودی، قیمت‌گذاری، ظاهر، بنر، زمان ارسال و مدیر اختصاصی خود را داشته باشد.</p>
+        <ul>
+          <li>✓ موجودی و قیمت‌گذاری مستقل</li>
+          <li>✓ رنگ‌بندی و محتوای اختصاصی</li>
+          <li>✓ مدیر با سطح دسترسی فروشگاه</li>
+          <li>✓ انتخاب شعبه توسط کاربر</li>
+        </ul>
+      </div>
+      <div class="mock">
+        <header>مدیریت شعبه‌ها <em>● Live</em></header>
+        <p>شعبه مرکزی <b>فعال</b><small>۱۲۴ محصول</small></p>
+        <p>شعبه شمال <b>فعال</b><small>۸۶ محصول</small></p>
+        <p>شعبه غرب <b>فعال</b><small>۹۲ محصول</small></p>
+        <footer>+ افزودن شعبه جدید</footer>
+      </div>
+    </section>
+
+    <section id="customer-app" class="dev-info">
+      <label>اپلیکیشن مشتری</label>
+      <h2>Next.js با <b>App Router</b> — یک سورس، دو خروجی.</h2>
+      <p class="sub">اپلیکیشن مشتری با Next.js ۱۶ (App Router) ساخته شده و با Capacitor مستقیماً به اپ اندروید و iOS
+        تبدیل می‌شود. تمام منطق تجاری و state با معماری تمیز و قابل توسعه پیاده‌سازی شده.</p>
+
+      <div class="dev-grid">
+        <article>
+          <strong>رندر ترکیبی SSR + CSR</strong>
+          <p>صفحات اصلی با Server Components رندر می‌شوند و تعامل‌های داینامیک با React Query در سمت کلاینت مدیریت
+            می‌شوند.</p>
+        </article>
+        <article>
+          <strong>دو Axios Instance</strong>
+          <p>یک instance برای Server Components و یک instance برای Client Components — با مدیریت خودکار توکن و
+            branchCode از کوکی.</p>
+        </article>
+        <article>
+          <strong>احراز هویت OTP</strong>
+          <p>ورود فقط با شماره موبایل و کد پیامکی. بدون رمز عبور. توکن در کوکی ذخیره می‌شود تا با SSR سازگار باشد.</p>
+        </article>
+        <article>
+          <strong>سبد خرید کوکی‌محور</strong>
+          <p>state سبد خرید در کوکی نگه‌داری می‌شود (نه localStorage) تا هم در کلاینت و هم در سرور قابل دسترسی باشد.</p>
+        </article>
+        <article>
+          <strong>مولتی‌شعبه واقعی</strong>
+          <p>انتخاب شعبه در ابتدای ورود. تمام محتوا (محصول، دسته‌بندی، سبد) بر اساس branchCode فیلتر می‌شود.</p>
+        </article>
+        <article>
+          <strong>PWA + Capacitor</strong>
+          <p>همان سورس هم به‌صورت PWA نصب می‌شود، هم با Capacitor به اپ native اندروید/iOS پکیج می‌شود.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="admin" class="admin">
+      <div>
+        <label>پنل مدیریت</label>
+        <h2>پنل مدیریت را قبل از خرید ببین.</h2>
+        <p>اطلاعات ورود دمو را وارد کنید و محیط مدیریت پوشا را بررسی کنید.</p>
+        <div class="note">ⓘ <span><b>Demo Access</b><small>اطلاعات ورود نمونه است و بعداً قابل تغییر است.</small></span>
+        </div>
+      </div>
+      <form onsubmit="return false">
+        <div class="formtitle">
+          P <span><b>ورود به پنل مدیریت</b><small>adminscript.savisapp.ir</small></span>
+        </div>
+        <label>نام کاربری<input value="dress"></label>
+        <label>رمز عبور<input value="dress@123"></label>
+        <a class="primary form-btn" href="https://adminscript.savisapp.ir" target="_blank" rel="noopener">ورود به پنل
+         </a>
+        <small class="demo">Username: dress &nbsp; | &nbsp; Password: dress@123</small>
+      </form>
+    </section>
+
+    <section id="specs" class="specs">
+      <label>مشخصات فنی</label>
+      <h2>مشخصات فنی هر بخش، <b>برای برنامه‌نویس‌ها.</b></h2>
+      <div class="spectable">
+        <div class="specrow specrow-head">
+          <span>بخش</span>
+          <span>استک فنی</span>
+          <span>ارتباط با داده</span>
+          <span>احراز هویت</span>
+        </div>
+        <div class="specrow">
+          <span>پنل مدیریت</span>
+          <span>React 19، Vite 7، TypeScript</span>
+          <span>TanStack Query + Axios</span>
+          <span>JWT — نقش Admin / Branch</span>
+        </div>
+        <div class="specrow">
+          <span>اپلیکیشن مشتری</span>
+          <span>Next.js 16 (App Router)، Capacitor</span>
+          <span>SSR + دو axios instance (سرور/کلاینت)</span>
+          <span>JWT — ورود با OTP</span>
+        </div>
+        <div class="specrow">
+          <span>بک‌اند</span>
+          <span>Node.js، Express 4، TypeScript</span>
+          <span>MongoDB 8.6 از طریق Mongoose</span>
+          <span>JWT + میان‌افزار نقش‌محور</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <label>سوالات متداول</label>
+      <h2>سوالات متداول برنامه‌نویس‌ها</h2>
+      <details>
+        <summary>آیا سورس کامل هر سه بخش تحویل داده می‌شود؟</summary>
+        <p>بله؛ پنل مدیریت (React)، اپلیکیشن مشتری (Next.js) و بک‌اند (Node.js) هر سه به‌صورت کد منبع کامل در اختیار
+          قرار می‌گیرند.</p>
+      </details>
+      <details>
+        <summary>آیا امکان افزودن ماژول یا ویژگی جدید وجود دارد؟</summary>
+        <p>بله. هر سه بخش از یک الگوی معماری یکسان و تکرارشونده پیروی می‌کنند؛ افزودن ماژول جدید یعنی کپی‌کردن همان الگو
+          برای یک موجودیت جدید.</p>
+      </details>
+      <details>
+        <summary>اپ موبایل جداگانه نیاز است؟</summary>
+        <p>خیر. همان اپلیکیشن Next.js با Capacitor مستقیماً به اپ اندروید/iOS پکیج می‌شود؛ یک سورس، دو خروجی.</p>
+      </details>
+      <details>
+        <summary>سیستم مولتی‌شعبه چطور کار می‌کند؟</summary>
+        <p>هر شعبه موجودی، قیمت، ظاهر، بنر و مدیر اختصاصی خودش را دارد؛ مشتری هنگام ورود به اپلیکیشن، شعبهٔ موردنظر را
+          انتخاب می‌کند و تمام محتوا بر همان اساس فیلتر می‌شود.</p>
+      </details>
+      <details>
+        <summary>پرداخت از چه درگاهی پشتیبانی می‌کند؟</summary>
+        <p>در حال حاضر اتصال کامل به درگاه زرین‌پال پیاده‌سازی شده؛ به دلیل معماری تمیز لایهٔ پرداخت، افزودن درگاه دیگر
+          هم در آینده ساده است.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <div>
+        <label>آماده ساختی؟</label>
+        <h2>پوشا را تجربه کن؛<br><b>بقیه مسیر با تو.</b></h2>
+        <p>یک پایهٔ قدرتمند برای ساخت و توسعهٔ فروشگاه‌های اینترنتی مدرن.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fcol">
+      <a class="logo" href="#">P<span>پوشا</span></a>
+      <p>اسکریپت فروشگاهی مولتی‌شعبه‌ای برای کسب‌وکارهای پوشاک.</p>
+    </div>
+    <div class="fcol">
+      <b>محصول</b>
+      <a href="#features">ویژگی‌ها</a>
+      <a href="#architecture">معماری</a>
+      <a  href="#admin">پنل مدیریت</a>
+    </div>
+    <div class="fcol">
+      <b>فنی</b>
+      <a href="#tech">تکنولوژی</a>
+      <a href="#specs">مشخصات فنی</a>
+      <a href="#faq">سوالات متداول</a>
+    </div>
+    <div class="fbottom">
+      پوشا — Modern Multi-Branch E-commerce Script
+      <span>© 2026 Poosha</span>
+    </div>
+  </footer>
+</body>
+
+</html>
